@@ -1,0 +1,33 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.center {
+  text-align: center;
+}
+
+body {
+  padding-top: 60px;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: mediumspringgreen;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: orchid;
+  border-color: orchid;
+}
+
+.navbar .nav > li > a {
+  color: mediumspringgreen;
+}
+
+h1, h2, h3, h4, h5, h6, div, p{
+  font-family: Consolas, monaco, monospace;
+}
