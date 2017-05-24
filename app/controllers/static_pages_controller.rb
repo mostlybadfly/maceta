@@ -1,6 +1,4 @@
 class StaticPagesController < ApplicationController
-  include GemojiHelper
-
   def home
   end
 
