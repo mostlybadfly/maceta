@@ -1,0 +1,46 @@
+<div class="center jumbotron">
+  <h2>New Plant</h2>
+  <%= form_for :plant, class:"plant-form" do |f|%>
+    <div class="row">
+      <div class="row form-group">
+        <%= f.label :common_name, class: "alabel col-md-6 text-left" %>
+        <div class="col-md-6">
+          <%= f.text_field :common_name, class: "form-control" %>
+        </div>
+      </div>
+      <div class="row form-group">
+        <%= f.label :scientific_name, class: "col-md-6 text-left" %>
+        <div class="col-md-6">
+          <%= f.text_field :scientific_name, class: "form-control" %>
+        </div>
+      </div>
+      <div class="row form-group">
+        <%= f.label :nickname, class: "col-md-6 text-left" %>
+        <div class="col-md-6">
+          <%= f.text_field :nickname, class: "form-control" %>
+        </div>
+      </div>
+      <div class="row form-group">
+        <%= f.label :origin, class: "col-md-6 text-left" %>
+        <div class="col-md-6">
+          <%= f.text_field :origin, class: "form-control" %>
+        </div>
+      </div>
+      <div class="row form-group">
+        <%= f.label :watering_schedule, class: "col-md-6 text-left" %>
+        <div class="col-md-6">
+          <%= f.select :watering_schedule, ["Weekly", "Bi-Weekly", "Monthly", "Sparse"], {}, { class: "form-control" } %>
+        </div>
+      </div>
+      <div class="row form-group">
+        <%= f.label :light_requirements, class: "col-md-6 text-left" %>
+        <div class="col-md-6">
+          <%= f.select :light_requirements, ["Direct Sunlight", "Indirect Sunlight", "Shady/Dark"], {}, { class: "form-control" } %>
+        </div>
+      </div>
+    </div>
+    <div class="row form-group">
+      <%= f.submit class: "btn btn-plum" %>
+    </div>
+  <% end %>
+</div>
