@@ -4,6 +4,8 @@ A plant tracking app!
 
 Currently working on :
 
- :seedling: Creating a new Plant Model/Controller
 
- :seedling: Adding specs for Plant 
+:seedling: Creating a new Plant Model/Controller
+
+
+:seedling: Adding specs for Plant 
