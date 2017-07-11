@@ -1,2 +1,52 @@
-<h1>Plants#show</h1>
-<p>Find me in app/views/plants/show.html.erb</p>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Common Name:</strong>
+      </div>
+      <div class="col-sm-6">
+        <%= @plant.common_name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Scientific Name:</strong>
+      </div>
+      <div class="col-sm-6">
+        <%= @plant.scientific_name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Nickname:</strong>
+      </div>
+      <div class="col-sm-6">
+        <%= @plant.nickname %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Origin:</strong>
+      </div>
+      <div class="col-sm-6">
+        <%= @plant.origin %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Watering Schedule:</strong>
+      </div>
+      <div class="col-sm-6">
+        <%= @plant.watering_schedule %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Light Requirement:</strong>
+      </div>
+      <div class="col-sm-6">
+        <%= @plant.light_requirement %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, div, p{
 }
 
 .form-group label {
-  padding-left: 350px;
+  padding-left: 100px;
 }
 
 .form-control {
@@ -70,4 +70,9 @@ img.emoji {
 .btn-plum {
   background-color: $plum;
   color: floralwhite;
+}
+
+.plant-info {
+  font-size: 1.2em;
+  padding-left: 75px;
 }
