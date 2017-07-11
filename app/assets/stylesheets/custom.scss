@@ -6,6 +6,18 @@ h1, h2, h3, h4, h5, h6, div, p{
   font-family: Consolas, monaco, monospace;
 }
 
+.form-group label {
+  padding-left: 100px;
+}
+
+.form-control {
+  width: 75%;
+}
+
+.selector {
+  text-align: center;
+}
+
 .center {
   text-align: center;
 }
@@ -49,4 +61,18 @@ img.emoji {
   width: 1.1em;
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
+}
+
+.name-fields {
+  display: inline-block;
+}
+
+.btn-plum {
+  background-color: $plum;
+  color: floralwhite;
+}
+
+.plant-info {
+  font-size: 1.2em;
+  padding-left: 75px;
 }
