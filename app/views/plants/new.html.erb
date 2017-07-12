@@ -38,6 +38,12 @@
           <%= f.select :light_requirement, ["Direct Sunlight", "Indirect Sunlight", "Shady/Dark"], {}, { class: "form-control" } %>
         </div>
       </div>
+      <div class="row form-group">
+        <%= f.label :image, class: "col-sm-6 text-left" %>
+        <div class="col-sm-6">
+          <%= f.file_field :image, class: "form-control" %>
+        </div>
+      </div>
     </div>
     <div class="row form-group">
       <%= f.submit class: "btn btn-plum" %>
