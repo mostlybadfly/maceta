@@ -1,7 +1,9 @@
 <div class="container">
   <div class="jumbotron plant-facts">
     <div class="row center">
-      <%= image_tag @plant.image.display.url %>
+      <% unless @plant.image.blank? %>
+        <%= image_tag @plant.image.display.url %>
+      <% end %>
     </div>
     <br />
     <div class="row">
