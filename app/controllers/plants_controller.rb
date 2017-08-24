@@ -14,7 +14,7 @@ class PlantsController < ApplicationController
   end
 
   def create
-    @plant = Plant.new(plant_params)
+    @plant = current_user.plants.build(plant_params)
 
     @plant.save
     redirect_to @plant
