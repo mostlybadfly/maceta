@@ -1,2 +1,59 @@
-<h1>Plants#index</h1>
-<p>Find me in app/views/plants/index.html.erb</p>
+<div class="jumbotron plant-facts">
+  <h2 class="text-center">My Garden</h2>
+  <% @plants.each do |plant| %>
+    <div class="row center">
+      <% unless plant.image.blank? %>
+        <%= image_tag plant.image.display.url %>
+      <% end %>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Common Name:</strong>
+      </div>
+      <div class="col-sm-6 plant-data">
+        <%= plant.common_name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Scientific Name:</strong>
+      </div>
+      <div class="col-sm-6 plant-data">
+        <%= plant.scientific_name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Nickname:</strong>
+      </div>
+      <div class="col-sm-6 plant-data">
+        <%= plant.nickname %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Origin:</strong>
+      </div>
+      <div class="col-sm-6 plant-data">
+        <%= plant.origin %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Watering Schedule:</strong>
+      </div>
+      <div class="col-sm-6 plant-data">
+        <%= plant.watering_schedule %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <strong class="plant-info">Light Requirement:</strong>
+      </div>
+      <div class="col-sm-6 plant-data">
+        <%= plant.light_requirement %>
+      </div>
+    </div>
+  <% end %>
+</div>
